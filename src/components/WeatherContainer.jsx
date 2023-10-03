@@ -67,8 +67,8 @@ const WeatherContainer = ({ weather }) => {
         {/* Seccion inferior */}
         <article className="grid grid-cols-3 justify-items-center items-center bg-[rgba(224,_224,_224,_0.8)] rounded-[30px] p-2 py-4 sm:grid-cols-1 dark:bg-[rgba(55,_55,_55,_0.80)] dark:text-white">
           <WeatherStat icon={"/wind.svg"} unit=" m/s" value={weather.wind.speed} />
-          <WeatherStat icon="/humidity.svg" unit=" m/s" value={weather.main.humidity} />
-          <WeatherStat icon="/pressure.svg" unit=" m/s" value={weather.main.pressure} />
+          <WeatherStat icon="/humidity.svg" unit=" %" value={weather.main.humidity} />
+          <WeatherStat icon="/pressure.svg" unit=" hPa" value={weather.main.pressure} />
         </article>
       </div>
 

@@ -72,7 +72,7 @@ function App() {
         weather == null ? (<section className={`bg-[url("/loaderBg.svg")] bg-cover bg-center fixed top-0 left-0 w-full h-full ${weather ? 'hidden' : ''}`}></section>
         ) : (
           <>
-            <img src={weatherBackgrounds[weather?.weather[0]?.icon]} alt="" className="w-full h-full object-cover absolute dark:brightness-50" />
+            <img src={weatherBackgrounds[weather?.weather[0]?.icon]} alt="" className="w-full h-full object-cover fixed top-0 left-0  dark:brightness-50" />
 
             <section className='w-full flex items-center justify-between p-6 z-10'>
               <span className='text-white text-[19px] font-semibold'>Weather App</span>
